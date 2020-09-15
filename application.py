@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    url = "https://app-communicaton-test-2.azurewebsites.net/"
+    url = "http://atlas-infra-connect-1.cdf-infra.appserviceenvironment.net/"
     res = requests.get(url)
     dictFromServer = res.json()
     return dictFromServer['message']
